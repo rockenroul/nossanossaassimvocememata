@@ -1,0 +1,65 @@
+img{
+    position: absolute;
+    width: 500px;
+}
+
+
+
+body{
+    background-color: gray;
+}
+
+.template{
+position: relative;
+background-color: rgb(255, 255, 255);
+display: grid;
+grid-template-areas:            
+'header header header header'
+'nav main main aside'
+'footer footer footer footer'
+;
+grid-template-columns: 10% auto auto 10%;
+}
+
+.header, .nav, .main, .footer, .aside{
+    background-color: rgb(92, 36, 104);
+    border: 1px solid rgb(31, 31, 31);
+    padding: 20px;
+    color: rgb(255, 255, 255);
+
+}
+
+.header{
+    grid-area: header;
+    height: 10vh;
+}
+
+.nav{
+    grid-area: nav;
+    
+}
+
+.main{
+    object-fit: cover;
+    grid-area: main;
+    height: 50vh;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.aside{
+    grid-area: aside;
+}
+
+.aafolou{
+    width:8%;
+    height: 70%;
+    object-fit: fill;
+}
+
+.bencapai{
+    width: 90%;
+    height: 40%;
+}
